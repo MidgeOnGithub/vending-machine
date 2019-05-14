@@ -1,7 +1,13 @@
 [package]
-name = "vending-machine"
+name = "vending_machine"
 version = "0.1.0"
 authors = ["Cody <Mason.Cody.M@gmail.com>"]
 edition = "2018"
 
-[dependencies]
+[lib]
+name = "vending_machine"
+path = "src/lib.rs"
+
+[[bin]]
+name = "vending_machine_bin"
+path = "src/main.rs"
